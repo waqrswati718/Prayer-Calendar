@@ -1,0 +1,416 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  font-family: sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.top-img {
+  height: 180px;
+  width: 100%;
+}
+.top-logo {
+  position: absolute;
+  width: 200px;
+  justify-content: center;
+  top: 15px;
+}
+
+.num {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 5px;
+  bottom: 5%;
+}
+
+.num img {
+  width: 20px;
+  margin: 0px 5px;
+}
+
+.num div {
+  margin-right: 10px;
+  font-size: large;
+  font-weight: 300;
+}
+
+.num div span {
+  margin: 0 5px;
+}
+
+.months {
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+}
+.months .eng-month {
+  text-align: center;
+  font-size: xx-large;
+  opacity: 70%;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: none;
+  border: none;
+  outline: 0;
+}
+
+.hijri-month {
+  padding-top: 4px;
+  font-size: x-small;
+}
+.j {
+  width: fit-content;
+}
+.months .islamic-month {
+  text-align: center;
+  background: none;
+  border: none;
+  outline: 0;
+  font-size: 15px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: absolute;
+  right: 5px;
+  bottom: 5%;
+}
+.email img {
+  width: 15px;
+  margin-right: 5px;
+}
+.top-title {
+  height: 25px;
+  margin-top: 2px;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  padding: 10px 0px;
+}
+.top-title div {
+  position: absolute;
+}
+.top-title .h1 {
+  position: absolute;
+  top: 3;
+  left: 40%;
+  color: #fff;
+  font-size: small;
+  opacity: 90%;
+}
+.top-title .h2 {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  color: #fff;
+  font-weight: 500;
+}
+.top-title {
+  background-image: url(./Assets/Top\ Title\ Rectangle.png);
+}
+.table-head {
+  background: #26a4d3;
+  width: 100%;
+  margin-top: 5px;
+  color: #fff;
+  font-size: small;
+  display: flex;
+  font-weight: 200;
+}
+.head1 {
+  width: fit-content;
+}
+
+.month {
+  padding: 5px;
+  border-right: 1px solid #a4d7f3;
+  border-bottom: 1px solid #a4d7f3;
+  text-align: center;
+}
+.month .j {
+  margin-left: 29%;
+}
+.head1-1 {
+  display: flex;
+}
+.date {
+  padding: 5px 11px;
+  border-right: 1px solid #a4d7f3;
+}
+.day {
+  padding: 5px 11px;
+  border-right: 1px solid #a4d7f3;
+}
+.hijri {
+  padding: 5px 13px;
+  border-right: 1px solid #a4d7f3;
+}
+.head2 {
+  width: fit-content;
+}
+.fajr {
+  padding: 12.5px 26px;
+  border-right: 1px solid #a4d7f3;
+  border-bottom: 1px solid #a4d7f3;
+  text-align: center;
+}
+.head2-1 {
+  display: flex;
+}
+.start1 {
+  padding: 5px 13px;
+  border-right: 1px solid #a4d7f3;
+}
+.jamaa {
+  padding: 5px 13px;
+  border-right: 1px solid #a4d7f3;
+}
+.head3 {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 17.5px 13px;
+  border-right: 1px solid #a4d7f3;
+  text-align: center;
+}
+.head4 {
+  width: fit-content;
+}
+.duhr {
+  padding: 12.5px 20px;
+  text-align: center;
+  border-right: 1px solid #a4d7f3;
+  border-bottom: 1px solid #a4d7f3;
+}
+.start2 {
+  padding: 5px 20px;
+  text-align: center;
+  border-right: 1px solid #a4d7f3;
+}
+.head5 {
+  width: fit-content;
+  padding: 17.5px 13px;
+  border-right: 1px solid #a4d7f3;
+  text-align: center;
+}
+.head6 {
+  width: fit-content;
+}
+.asr {
+  padding: 12.5px 26px;
+  border-right: 1px solid #a4d7f3;
+  border-bottom: 1px solid #a4d7f3;
+  text-align: center;
+}
+.start-j1 {
+  display: flex;
+}
+.start3 {
+  padding: 5px 20px;
+  text-align: center;
+  border-right: 1px solid #a4d7f3;
+}
+.jamaa2 {
+  padding: 5px 13px;
+  border-right: 1px solid #a4d7f3;
+}
+.head7 {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 17.5px 13px;
+  border-right: 1px solid #a4d7f3;
+  text-align: center;
+}
+.head8 {
+  width: fit-content;
+}
+.ishaa {
+  padding: 12.5px 26px;
+  border-bottom: 1px solid #a4d7f3;
+  text-align: center;
+}
+.start-j2 {
+  display: flex;
+}
+.start4 {
+  padding: 5px 20px;
+  text-align: center;
+  border-right: 1px solid #a4d7f3;
+}
+.jamaa3 {
+  padding: 0 12px;
+  padding-top: 5px;
+}
+.calendar {
+  width: 100%;
+  margin-top: 2px;
+}
+.line {
+  height: 22px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #45b0d8;
+}
+
+.monday {
+  background: #a4d7f3;
+}
+
+.row-field {
+  border-right: 1px solid #45b0d8;
+  padding: 3px 0;
+}
+.row-field:last-child {
+  border-right: none;
+}
+.row-field input {
+  outline: none;
+  border: none;
+  text-align: center;
+}
+.line.monday .row-field input {
+  background: #a4d7f3;
+}
+.friday .row-field input {
+  font-weight: bold;
+}
+.row-date input {
+  width: 46px;
+}
+.row-day input {
+  width: 41px;
+}
+.row-hijri input {
+  width: 44px;
+}
+.row-start1 input {
+  width: 50px;
+}
+.row-jama1 input {
+  width: 78px;
+}
+.row-sunrise input {
+  width: 66px;
+}
+.row-start2 input {
+  width: 64px;
+}
+.row-jumuah input {
+  width: 78px;
+}
+.row-start3 input {
+  width: 64px;
+}
+.row-jama2 input {
+  width: 78px;
+}
+.row-maghrib input {
+  width: 69px;
+}
+.row-start4 input {
+  width: 63px;
+}
+.row-jama3 input {
+  width: 75px;
+}
+.bottom-bar {
+  background-image: url(./Assets/Bottom\ Jumua\ Bar.png);
+  width: 100%;
+  height: 50px;
+  margin-top: 3px;
+}
+.bottom-bar div {
+  color: #fff;
+  font-weight: bold;
+  opacity: 90%;
+  margin-top: 17px;
+  text-align: center;
+}
+.bottom-container {
+  background-image: url(./Assets/Bottom\ Container.png);
+}
+.bottom-container {
+  width: 100%;
+  margin-top: 5px;
+  position: relative;
+  height: 150px;
+}
+.imp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.imp .div-line-1 {
+  background-color: black;
+  opacity: 70%;
+  width: 80px;
+  height: 2px;
+}
+.imp h3 {
+  font-weight: bold;
+  opacity: 80%;
+  margin: 0 5px;
+  font-size: medium;
+}
+.imp .div-line-2 {
+  background-color: black;
+  opacity: 80%;
+  width: 80px;
+  height: 2px;
+}
+.bottom-container p {
+  font-size: small;
+  text-align: center;
+  opacity: 80%;
+}
+.bottom-container p span {
+  font-weight: bold;
+}
+
+.salafi-logo img {
+  width: 50px;
+  height: 60px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.paragraph {
+  text-align: center;
+  font-size: small;
+  position: absolute;
+  right: 200px;
+  bottom: 20px;
+  opacity: 80%;
+}
+.quran-logo img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}

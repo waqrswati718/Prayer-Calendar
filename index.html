@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MASJID AS SUNNAH PRAYER CALENDER</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="./Assets/Top Masjid Image.png" class="top-img" />
+        <img src="./Assets/Top Logo.png" class="top-logo" />
+
+        <div class="num">
+          <img src="./svg/phone.svg" />
+          <div>01274<span>501</span>736</div>
+        </div>
+        <div class="months">
+          <input
+            id="solar-month"
+            type="text"
+            class="eng-month"
+            onchange="dynamicMonth('solar-month')"
+            placeholder="Enter Month"
+          />
+          <br />
+          <input
+            id="hijri-month"
+            type="text"
+            class="islamic-month"
+            placeholder="Enter Month-Hijri"
+          />
+        </div>
+        <div class="email">
+          <img src="./svg/global-icon.png" />
+          <div>www.albaseerah.com</div>
+        </div>
+      </div>
+      <div class="top-title">
+        <div class="h1">Approximate Prayer Start Times*</div>
+        <div class="h2">CONGREGATIONAL PRAYER TIMES</div>
+      </div>
+
+      <div class="table-head">
+        <div class="head1">
+          <div class="month">
+            <div id="calendar-month" class="j">January</div>
+            <div id="hijri-month-div" class="hijri-month">
+              Jumada al-Thani-Rajab
+            </div>
+          </div>
+          <div class="head1-1">
+            <div class="date">Date</div>
+            <div class="day">Day</div>
+            <div class="hijri">Hijri</div>
+          </div>
+        </div>
+        <div class="head2">
+          <div class="fajr">Fajr</div>
+          <div class="head2-1">
+            <div class="start1">Start</div>
+            <div class="jamaa">Jamaa'ah</div>
+          </div>
+        </div>
+        <div class="head3">Sunrise</div>
+        <div class="head4">
+          <div class="duhr">Duhr</div>
+          <div class="start2">Start</div>
+        </div>
+        <div class="head5">
+          Jumu'ah <br />
+          Jamaa'ah
+        </div>
+        <div class="head6">
+          <div class="asr">Asr</div>
+          <div class="start-j1">
+            <div class="start3">Start</div>
+            <div class="jamaa2">Jamaa'ah</div>
+          </div>
+        </div>
+        <div class="head7">Maghrib</div>
+        <div class="head8">
+          <div class="ishaa">Ishaa</div>
+          <div class="start-j2">
+            <div class="start4">Start</div>
+            <div class="jamaa3">Jamaa'ah</div>
+          </div>
+        </div>
+      </div>
+      <div id="calendar" class="calendar">
+        <!-- <div class="line monday">
+          <div class="row-field row-date"><input type="text" /></div>
+          <div class="row-field row-day"><input type="text" /></div>
+          <div class="row-field row-field row-hijri"><input type="text" /></div>
+          <div class="row-field row-start1"><input type="text" /></div>
+          <div class="row-field row-jama1"><input type="text" /></div>
+          <div class="row-field row-sunrise"><input type="text" /></div>
+          <div class="row-field row-start2"><input type="text" /></div>
+          <div class="row-field row-jumuah"><input type="text" /></div>
+          <div class="row-field row-start3"><input type="text" /></div>
+          <div class="row-field row-jama2"><input type="text" /></div>
+          <div class="row-field row-maghrib"><input type="text" /></div>
+          <div class="row-field row-start4"><input type="text" /></div>
+          <div class="row-field row-jama3"><input type="text" /></div>
+        </div>
+
+        <div class="line friday">
+          <div class="row-field row-date"><input type="text" /></div>
+          <div class="row-field row-day"><input type="text" /></div>
+          <div class="row-field row-field row-hijri"><input type="text" /></div>
+          <div class="row-field row-start1"><input type="text" /></div>
+          <div class="row-field row-jama1"><input type="text" /></div>
+          <div class="row-field row-sunrise"><input type="text" /></div>
+          <div class="row-field row-start2"><input type="text" /></div>
+          <div class="row-field row-jumuah"><input type="text" /></div>
+          <div class="row-field row-start3"><input type="text" /></div>
+          <div class="row-field row-jama2"><input type="text" /></div>
+          <div class="row-field row-maghrib"><input type="text" /></div>
+          <div class="row-field row-start4"><input type="text" /></div>
+          <div class="row-field row-jama3"><input type="text" /></div>
+        </div> -->
+      </div>
+      <div class="bottom-bar">
+        <div>
+          JUMU'AH KHUTBAH STARTS AT APPROX 12:30PM AND THE PRAYER WILL BE AT
+          1:00PM.
+        </div>
+      </div>
+      <div class="bottom-container">
+        <div class="imp">
+          <div class="div-line-1"></div>
+          <div class="note"></div>
+          <h3>IMPORTANT NOTE</h3>
+          <div class="div-line-2"></div>
+        </div>
+        <p>
+          *The rulings connected with prayers times are determined by seeing
+          with the naked eye. It is correct that one should overburden <br />
+          oneself by meticulously following timetables based upon austronomical
+          calculations. Rather the <span>Sunnah</span> is ease, and timetable is
+          <br />
+          merely an approximate guide.
+        </p>
+        <div class="salafi-logo">
+          <img
+            src="./Assets/Bottom SalafiBookStore Logo ARL BRADFORD V1.4.png"
+            alt=""
+          />
+        </div>
+        <div class="paragraph">
+          See 'Majmoo' al-Fatawa' of Shykhul-Islam Ibn Tayeeyyah (25/126-202),
+          <br />
+          'Al-Majmoo' of an-Nawawee (6/279), 'At-Talkheesul-Habeer' of Ibn Hajr
+          (2/187-188)
+        </div>
+        <div class="quran-logo">
+          <img src="./Assets/Bottom AQS Quraan Logo.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
