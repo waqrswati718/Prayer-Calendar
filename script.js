@@ -45,7 +45,7 @@ let currentYearData = [];
 
 // Api Endpiont
 let endpoint =
-  "http://masjid.connextar.com/?rest_route=/dpt/v1/prayertime&filter=year";
+  "https://masjid.connextar.com/?rest_route=/dpt/v1/prayertime&filter=year";
 
 // Request to the Api
 fetch(endpoint)
